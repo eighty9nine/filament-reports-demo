@@ -59,8 +59,8 @@ class SalesReport extends Report
         return $form
             ->schema([
                 DateRangePicker::make("created_at")
-                ->label("Date Range")
-                ->placeholder("Select a date range")
+                    ->label("Date Range")
+                    ->placeholder("Select a date range")
             ]);
     }
 

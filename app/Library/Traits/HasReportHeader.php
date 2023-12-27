@@ -7,6 +7,9 @@ use EightyNine\Reports\Components\Text;
 
 trait HasReportHeader
 {
+
+    protected bool $hasTimestamp = true;
+
     public function header(Header $header): Header
     {
         return $header
@@ -16,7 +19,10 @@ trait HasReportHeader
                         Text::make($this->reportTitle ?? "Report")
                             ->title()
                             ->primary(),
-                        Text::make("Generated on " . now()->format("d/m/Y H:i"))
+                        Text::make(
+                            $this->hasTimestamp ?
+                            "Generated on " . now()->format("d/m/Y H:i") : ""
+                        )
                             ->fontXs(),
                         Text::make($this->reportSubTitle ?? "")
                             ->subtitle(),
