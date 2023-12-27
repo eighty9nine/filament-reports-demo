@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Models\Sale;
+use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Miguilim\FilamentAutoPanel\AutoResource;
@@ -80,7 +81,9 @@ class SaleResource extends AutoResource
                 //
             ],
             'infolist' => [
-                //
+                TextInput::make("id")->hidden(),
+                TextInput::make("created_at")->hidden(),
+                TextInput::make("updated_at")->hidden(),
             ],
         ];
     }

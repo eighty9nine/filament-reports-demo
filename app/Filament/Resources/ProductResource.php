@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Models\Product;
+use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Miguilim\FilamentAutoPanel\AutoResource;
@@ -81,6 +82,9 @@ class ProductResource extends AutoResource
                 TextColumn::make("sale_price")->money("USD")
             ],
             'form' => [
+                TextInput::make("id")->hidden(),
+                TextInput::make("created_at")->hidden(),
+                TextInput::make("updated_at")->hidden(),
             ],
             'infolist' => [
                 //

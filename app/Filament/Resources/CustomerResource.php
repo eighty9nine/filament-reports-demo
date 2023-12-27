@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Models\Customer;
+use Filament\Forms\Components\TextInput;
 use Filament\Tables\Table;
 use Miguilim\FilamentAutoPanel\AutoResource;
 
@@ -70,7 +71,9 @@ class CustomerResource extends AutoResource
                 //
             ],
             'form' => [
-                //
+                TextInput::make("id")->hidden(),
+                TextInput::make("created_at")->hidden(),
+                TextInput::make("updated_at")->hidden(),
             ],
             'infolist' => [
                 //

@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Models\Purchase;
 use Faker\Provider\Text;
+use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Miguilim\FilamentAutoPanel\AutoResource;
@@ -76,7 +77,9 @@ class PurchaseResource extends AutoResource
                 TextColumn::make("updated_at")->hidden(),
             ],
             'form' => [
-                //
+                TextInput::make("id")->hidden(),
+                TextInput::make("created_at")->hidden(),
+                TextInput::make("updated_at")->hidden(),
             ],
             'infolist' => [
                 //
