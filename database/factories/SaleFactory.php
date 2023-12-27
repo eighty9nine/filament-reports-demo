@@ -32,6 +32,7 @@ class SaleFactory extends Factory
             'total' => $total,
             'discount' => $discount,
             'grand_total' => $grand_total,
+            'date' => fake()->dateTimeBetween('-1 year', 'now'),
         ];
     }
 }

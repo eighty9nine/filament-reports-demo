@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use EightyNine\Reports\ReportsPlugin;
 use Filament\Enums\ThemeMode;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -32,9 +33,13 @@ class DemoPanelProvider extends PanelProvider
                 'primary' => Color::Blue,
             ])
             ->brandLogo(asset('img/fr-logo.png'))
+            ->darkModeBrandLogo(asset('img/fr-logo-dark.png'))
             ->brandLogoHeight("50px")
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
+            ->colors([
+                "primary" => "#070165"
+            ])
             ->pages([
                 Pages\Dashboard::class,
             ])
@@ -56,6 +61,9 @@ class DemoPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
+            ])
+            ->plugins([
+                ReportsPlugin::make()
             ])
             ->defaultThemeMode(ThemeMode::Dark)
             ->viteTheme('resources/css/filament/demo/theme.css')

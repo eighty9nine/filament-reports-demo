@@ -8,13 +8,15 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.2",
-        "eightynine/filament-reports": "^3.0",
+        "php": "^8.1",
+        "eightynine/filament-reports": "*",
         "filament/filament": "^3.1",
+        "flowframe/laravel-trend": "^0.1.5",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
+        "malzariey/filament-daterangepicker-filter": "^2.3",
         "miguilim/filament-auto-panel": "^1.4"
     },
     "require-dev": {
@@ -31,7 +33,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "app/Library/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
@@ -68,7 +73,7 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
         {

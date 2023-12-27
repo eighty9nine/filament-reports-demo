@@ -10,6 +10,8 @@ use Miguilim\FilamentAutoPanel\AutoResource;
 
 class ProductResource extends AutoResource
 {
+    protected static ?string $recordTitleAttribute = 'name';
+
     protected static ?string $model = Product::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-shopping-bag';

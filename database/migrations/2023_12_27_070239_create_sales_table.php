@@ -20,6 +20,7 @@ return new class extends Migration
             $table->decimal('total', 10, 2);
             $table->decimal('discount',10, 2);
             $table->decimal('grand_total',10, 2);
+            $table->dateTime("date");
             $table->timestamps();
         });
     }

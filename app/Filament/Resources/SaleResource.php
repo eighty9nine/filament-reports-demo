@@ -78,12 +78,11 @@ class SaleResource extends AutoResource
                 TextColumn::make("updated_at")->hidden(),
             ],
             'form' => [
-                //
-            ],
-            'infolist' => [
                 TextInput::make("id")->hidden(),
                 TextInput::make("created_at")->hidden(),
                 TextInput::make("updated_at")->hidden(),
+            ],
+            'infolist' => [
             ],
         ];
     }
