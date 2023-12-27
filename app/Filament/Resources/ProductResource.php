@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Models\Product;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Miguilim\FilamentAutoPanel\AutoResource;
 
@@ -14,7 +15,14 @@ class ProductResource extends AutoResource
 
     protected static array $enumDictionary = [];
 
-    protected static array $visibleColumns = [];
+    protected static array $visibleColumns = [
+        "name",
+        "sku",
+        "slug",
+        "price",
+        "sale_price",
+        "description"
+    ];
 
     protected static array $searchableColumns = [];
 
@@ -68,9 +76,11 @@ class ProductResource extends AutoResource
         return [
             'table' => [
                 //
+                TextColumn::make("description")->limit(20),
+                TextColumn::make("price")->money("USD"),
+                TextColumn::make("sale_price")->money("USD")
             ],
             'form' => [
-                //
             ],
             'infolist' => [
                 //

@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Models\Expense;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Miguilim\FilamentAutoPanel\AutoResource;
 
@@ -67,7 +68,11 @@ class ExpenseResource extends AutoResource
     {
         return [
             'table' => [
-                //
+                TextColumn::make("amount")->money('USD'),
+                TextColumn::make("description")->limit(20),
+                TextColumn::make("id")->hidden(),
+                TextColumn::make("created_at")->hidden(),
+                TextColumn::make("updated_at")->hidden(),
             ],
             'form' => [
                 //

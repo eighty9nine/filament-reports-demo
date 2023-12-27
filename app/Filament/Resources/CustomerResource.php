@@ -14,7 +14,7 @@ class CustomerResource extends AutoResource
 
     protected static array $enumDictionary = [];
 
-    protected static array $visibleColumns = [];
+    protected static array $visibleColumns = ["name", "phone", "email"];
 
     protected static array $searchableColumns = [];
 

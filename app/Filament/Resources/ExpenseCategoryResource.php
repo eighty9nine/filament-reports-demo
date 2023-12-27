@@ -14,7 +14,7 @@ class ExpenseCategoryResource extends AutoResource
 
     protected static array $enumDictionary = [];
 
-    protected static array $visibleColumns = [];
+    protected static array $visibleColumns = ["name", "description"];
 
     protected static array $searchableColumns = [];
 

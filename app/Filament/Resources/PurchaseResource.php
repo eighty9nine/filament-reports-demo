@@ -3,6 +3,8 @@
 namespace App\Filament\Resources;
 
 use App\Models\Purchase;
+use Faker\Provider\Text;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Miguilim\FilamentAutoPanel\AutoResource;
 
@@ -67,7 +69,11 @@ class PurchaseResource extends AutoResource
     {
         return [
             'table' => [
-                //
+                TextColumn::make("price")->money("USD"),
+                TextColumn::make("total")->money("USD"),
+                TextColumn::make("id")->hidden(),
+                TextColumn::make("created_at")->hidden(),
+                TextColumn::make("updated_at")->hidden(),
             ],
             'form' => [
                 //

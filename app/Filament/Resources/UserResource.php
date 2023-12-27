@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Models\User;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Miguilim\FilamentAutoPanel\AutoResource;
 
@@ -67,7 +68,11 @@ class UserResource extends AutoResource
     {
         return [
             'table' => [
-                //
+                TextColumn::make("id")->hidden(),
+                TextColumn::make("email_verified_at")->hidden(),
+                TextColumn::make("password")->hidden(),
+                TextColumn::make("created_at")->hidden(),
+                TextColumn::make("updated_at")->hidden(),
             ],
             'form' => [
                 //

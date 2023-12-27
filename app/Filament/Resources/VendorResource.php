@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Models\Vendor;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Miguilim\FilamentAutoPanel\AutoResource;
 
@@ -67,7 +68,10 @@ class VendorResource extends AutoResource
     {
         return [
             'table' => [
-                //
+                TextColumn::make("id")->hidden(),
+                TextColumn::make("address")->limit(10),
+                TextColumn::make("created_at")->hidden(),
+                TextColumn::make("updated_at")->hidden(),
             ],
             'form' => [
                 //

@@ -1,0 +1,8 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+
+@config 'tailwind.config.js';
+
+/*set root font size to 12*/
+:root {
+    font-size: 15px;
+}
