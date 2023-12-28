@@ -65,8 +65,9 @@ class DemoPanelProvider extends PanelProvider
             ->plugins([
                 ReportsPlugin::make()
             ])
-            ->defaultThemeMode(ThemeMode::Dark)
+            ->defaultThemeMode(ThemeMode::Light)
             ->viteTheme('resources/css/filament/demo/theme.css')
             ->spa();
     }
+
 }
