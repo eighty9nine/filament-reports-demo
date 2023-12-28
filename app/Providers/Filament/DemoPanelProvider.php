@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Pages\LoginPage;
 use EightyNine\Reports\ReportsPlugin;
 use Filament\Enums\ThemeMode;
 use Filament\Http\Middleware\Authenticate;
@@ -28,7 +29,7 @@ class DemoPanelProvider extends PanelProvider
             ->default()
             ->id('demo')
             ->path('demo')
-            ->login()
+            ->login(LoginPage::class)
             ->colors([
                 'primary' => Color::Blue,
             ])
