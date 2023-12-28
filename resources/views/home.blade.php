@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="black">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,7 +8,7 @@
     <title>Filament reports</title>
     @vite('resources/css/app.css')
 </head>
-<body class="dark">
+<body>
 
 {{--    header--}}
 <nav>
@@ -40,7 +40,7 @@
                 need to feel bad! But after the release of this package if you still use plain tables as reports, then
                 you should suffer in the eternal flames </p>
             <div class="flex gap-2 mt-4">
-                <a href="{{url("demo/reports/product-evaluation-report")}}" class="btn btn-primary">See Demo</a>
+                <a href="{{url("demo/reports/sales-report")}}" class="btn btn-primary">See Demo</a>
                 <button class="btn btn-info">Start Using</button>
             </div>
         </div>
