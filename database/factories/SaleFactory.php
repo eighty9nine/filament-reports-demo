@@ -20,6 +20,7 @@ class SaleFactory extends Factory
     {
         $product = Product::query()->inRandomOrder()->first();
         $quantity = fake()->randomNumber(2);
+        $purchasePrice = $product->price;
         $price = $product->sale_price;
         $total = $quantity * $price;
         $discount = fake()->randomFloat(2, 0, 0.40 * $total);
@@ -28,6 +29,7 @@ class SaleFactory extends Factory
             'customer_id' => Customer::query()->inRandomOrder()->first()->id,
             'product_id' => $product->id,
             'quantity' => $quantity,
+            'purchase_price' => $purchasePrice,
             'price' => $price,
             'total' => $total,
             'discount' => $discount,
