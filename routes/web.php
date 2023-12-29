@@ -14,3 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'home');
+// the docs fallback routes routes
+Route::get('{path}', \App\Http\Controllers\DocsController::class)
+    ->where('path', '.+');

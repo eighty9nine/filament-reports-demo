@@ -41,7 +41,7 @@
                 you should suffer in the eternal flames </p>
             <div class="flex gap-2 mt-4">
                 <a href="{{url("demo/reports/sales-report")}}" class="btn btn-primary">See Demo</a>
-                <button class="btn btn-info">Start Using</button>
+                <a href="/docs" class="btn btn-info text-base-100">Get started</a>
             </div>
         </div>
         <div class="lg:w-1/2">
