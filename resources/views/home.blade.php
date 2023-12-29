@@ -158,7 +158,7 @@
                     your own
                     packages</p>
                 <div class=" mt-4">
-                    <a href="https://github.com/sponsors/eighty9nine" class="btn btn-info">Get Access</a>
+                    <a href="https://github.com/sponsors/eighty9nine" class="btn btn-info text-base-100">Get Access</a>
                 </div>
             </div>
         </div>
