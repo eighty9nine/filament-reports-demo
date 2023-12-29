@@ -4,6 +4,7 @@ namespace App\Filament\Reports;
 
 use App\Library\Traits\HasReportHeader;
 use App\Models\Sale;
+use EightyNine\Reports\Components\VerticalSpace;
 use EightyNine\Reports\Report;
 use EightyNine\Reports\Components\Body;
 use EightyNine\Reports\Components\Footer;
@@ -37,11 +38,27 @@ class SalesReport extends Report
                                     ->label("Date"),
                                 Body\TextColumn::make("value")
                                     ->money("USD")
-                                    ->label("amount")
+                                    ->label("Total Sales")
                                     ->alignRight()
                                     ->sum(),
                             ])
-                            ->data(fn(?array $filters) => $this->getData($filters)),
+                            ->data(
+                                fn(?array $filters) => $this->getData($filters)
+                            ),
+                        VerticalSpace::make(),
+                        Body\Table::make()
+                            ->columns([
+                                Body\TextColumn::make("date")
+                                    ->label("Date"),
+                                Body\TextColumn::make("value")
+                                    ->money("USD")
+                                    ->label("Total Sales")
+                                    ->alignRight()
+                                    ->sum(),
+                            ])
+                            ->data(
+                                fn(?array $filters) => $this->getData($filters)
+                            ),
                     ]),
             ]);
     }

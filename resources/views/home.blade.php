@@ -57,7 +57,7 @@
     </div>
 </section>
 
-{{--features--}}
+{{--highlights section--}}
 <section class="bg-base-200 mt-14">
     <div class="p-10">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
@@ -101,8 +101,43 @@
     </div>
 </section>
 
+{{--    features section--}}
+<section class="bg-base-100 p-20 flex flex-col gap-24">
+    <div class="w-full flex flex-col lg:flex-row gap-5">
+        <div class="lg:w-1/3 flex flex-col pt-24 gap-4">
+            <p class="text-6xl font-extrabold">Intuitive formatting</p>
+            <p class="text-lg">Format using the normal filament table text formatters, to unleash the power of filament reports </p>
+{{--            <button class="btn btn-md btn-primary w-fit">See customisations</button>--}}
+        </div>
+        <div class="mockup-window lg:w-2/3 rounded-xl bg-base-300">
+            <video playsinline="" autoplay="" muted="" loop=""
+                   class="border-base-300 rounded-xl shadow-2xl z-10">
+                <source src="{{asset("videos/column-formatting.mp4")}}" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="w-full flex flex-col lg:flex-row-reverse gap-5">
+        <div class="lg:w-1/3 flex flex-col pt-24 gap-4">
+            <p class="text-6xl font-extrabold">Multiple Tables</p>
+            <p class="text-lg">You can add as many tables as you want in the report, with spacer, and text headings</p>
+        </div>
+        <div class="mockup-window lg:w-2/3 rounded-xl bg-base-300">
+            <video playsinline="" autoplay="" muted="" loop=""
+                   class="border-base-300 rounded-xl shadow-2xl z-10">
+                <source src="{{asset("videos/multiple-tables.mp4")}}" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    {{--    multiple tables--}}
+    {{--    filters--}}
+    {{--    export/print--}}
+    {{--    column formatting--}}
+    {{--    alignment--}}
+    {{--    text formatting--}}
+</section>
 
-{{--section explaining that this package is sponsorware and will be publicly free once I get 50 sponsors--}}
+
+{{--sponsorware section --}}
 <section class="bg-base-100 p-20">
     <div class="">
         <div class="card w-full bg-base-200 shadow-xl rounded-lg">
