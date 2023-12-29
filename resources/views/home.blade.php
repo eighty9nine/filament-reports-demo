@@ -14,7 +14,7 @@
 <nav>
     <div class="navbar bg-base-100">
         <div class="flex-1">
-            <a class="btn btn-ghost text-xl">
+            <a class="btn btn-ghost text-xl ml-[-27px]">
                 <img src="{{asset("img/fr-logo-dark.png")}}" alt="" class="h-12 hidden dark:block">
                 <img src="{{asset("img/fr-logo.png")}}" alt="" class="h-12 dark:hidden">
             </a>
