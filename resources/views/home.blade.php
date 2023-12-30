@@ -19,8 +19,18 @@
                 <img src="{{asset("img/fr-logo.png")}}" alt="" class="h-12 dark:hidden">
             </a>
         </div>
-        <div class="flex-none pr-8">
-
+        <div class="flex-none pr-8 flex gap-3">
+            <div>
+                <a href="https://github.com/eighty9nine/filament-reports" target="_blank" rel="noopener noreferrer"
+                   class="navbar__item navbar__link flex items-center gap-2">GitHub
+                    <svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24"
+                         class="iconExternalLink_nPIU">
+                        <path fill="currentColor"
+                              d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path>
+                    </svg>
+                </a>
+            </div>
+            <a href="/docs" class="text-base-content text-md hover:text-primary">Documentation</a>
         </div>
     </div>
 </nav>
@@ -106,8 +116,9 @@
     <div class="w-full flex flex-col lg:flex-row gap-5">
         <div class="lg:w-1/3 flex flex-col pt-24 gap-4">
             <p class="text-6xl font-extrabold">Intuitive formatting</p>
-            <p class="text-lg">Format using the normal filament table text formatters, to unleash the power of filament reports </p>
-{{--            <button class="btn btn-md btn-primary w-fit">See customisations</button>--}}
+            <p class="text-lg">Format using the normal filament table text formatters, to unleash the power of filament
+                reports </p>
+            {{--            <button class="btn btn-md btn-primary w-fit">See customisations</button>--}}
         </div>
         <div class="mockup-window lg:w-2/3 rounded-xl bg-base-300">
             <video playsinline="" autoplay="" muted="" loop=""

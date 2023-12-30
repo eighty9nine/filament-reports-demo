@@ -45,20 +45,6 @@ class SalesReport extends Report
                             ->data(
                                 fn(?array $filters) => $this->getData($filters)
                             ),
-                        VerticalSpace::make(),
-                        Body\Table::make()
-                            ->columns([
-                                Body\TextColumn::make("date")
-                                    ->label("Date"),
-                                Body\TextColumn::make("value")
-                                    ->money("USD")
-                                    ->label("Total Sales")
-                                    ->alignRight()
-                                    ->sum(),
-                            ])
-                            ->data(
-                                fn(?array $filters) => $this->getData($filters)
-                            ),
                     ]),
             ]);
     }
