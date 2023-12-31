@@ -5,44 +5,49 @@ slug: /
 
 # Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+### Sponsorware
+:::info
+This package is currently available for sponsors only, and when I reach 50 sponsors, it will be available for everyone. If you are interested in using this package, please consider sponsoring me on [Github](https://github.com/sponsors/eighty9nine).
+:::
 
-## Getting Started
+## What is Filament Reports?
 
-Get started by **creating a new site**.
+🔥 Filament reports will **help you build** elegant reports in no time.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+💥 Building reports is a time consuming, where we either build tables and call them 
+reports, or we take days or weeks building reports with elegant UI.
 
-### What you'll need
+❤️ Filament reports will help you build elegant reports in no time. Build elegant reports
+the same way you build your filament tables and form.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### To summarise
+👉🏽 Filament reports is a filament plugin that will help you build elegant reports in no time. It comes
+packaged with various commands, components, and layouts to help you build comprehensive reports. This package
+will ensure that you only focus on building your reports, and not worry about the CSS and HTML 
+behind it all.
 
-## Generate a new site
+:::note
+This package is exclusively for [Filament](https://filamentadmin.com) admin panel. It will not work 
+outside of filament. For use outside filament, the package is not yet designed to work with other
+environments. Though I am working hard to make that a possibility.
+:::
 
-Generate a new Docusaurus site using the **classic template**.
+## Features
 
-The classic template will automatically be added to your project after you run the command:
+Filament reports is built with high attention to developer experience.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+- **Multiple tables in your report:** 😃
+  - You can have multiple tables in your report, for example like in a balance sheet where you may have a table for assets, and another for liabilities.
+- **Extremely customisable:** 🥳
+    - You can customise the report to your liking, from the layout, to the table, to the table columns, to the table rows, to the table cells, to the table cell values.
+- **Multiple layouts:**
+    - You can choose from a variety of layouts, from a simple table, to a table with a header, to a table with a header and a footer, to a table with a header and a footer and a summary.
+- **Formatting:** 📝
+    - You can format your table cells to your liking, from currency, to date, to time, to percentage, to numbers, to strings, to booleans, to images, to links, to buttons, to icons, to badges, to progress bars, to colors, to custom components.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+I also didn't forget to include filters.
+- **Filters:** 🤩
+    - You can generate a filter form and specify for various way that your users can filter your report. You can filter by date, by time, by number, by string, by boolean, by image, by link, by button, by icon, by badge, by progress bar, by color, by custom component.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+## Something Missing?
+Don't hesitate to create an issue in the [Github repository](https://github.com/sponsors/eighty9nine) I will do my best to work on all the issues, as I have committed myself to working on this full time.

@@ -19,7 +19,9 @@
                 <img src="{{asset("img/fr-logo.png")}}" alt="" class="h-12 dark:hidden">
             </a>
         </div>
-        <div class="flex-none pr-8 flex gap-3">
+        <div class="flex-none pr-8 flex gap-3 font-semibold">
+            <a href="/docs" class="text-base-content text-md hover:text-primary">Documentation</a>
+            <a href="/demo" class="text-base-content text-md hover:text-primary">Demo</a>
             <div>
                 <a href="https://github.com/eighty9nine/filament-reports" target="_blank" rel="noopener noreferrer"
                    class="navbar__item navbar__link flex items-center gap-2">GitHub
@@ -30,7 +32,6 @@
                     </svg>
                 </a>
             </div>
-            <a href="/docs" class="text-base-content text-md hover:text-primary">Documentation</a>
         </div>
     </div>
 </nav>
