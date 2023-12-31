@@ -37,9 +37,7 @@ class MyFirstReport extends Report
                                     ->title()
                                     ->primary(),
                                 Text::make("This report is from the docs, and shows a quick start report")
-                                    ->subtitle(),
-                                Text::make("Generated on: " . now()->format("d/m/Y H:i:s"))
-                                    ->subtitle(),
+                                    ->subtitle()
                             ])->alignRight()
                     ]),
             ]);
@@ -127,6 +125,8 @@ class MyFirstReport extends Report
     {
         return $footer
             ->schema([
+                Text::make("Generated on: " . now()->format("d/m/Y H:i:s"))
+                    ->subtitle(),
             ]);
     }
 

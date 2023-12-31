@@ -124,7 +124,7 @@ const config = {
                 copyright: `Copyright © ${new Date().getFullYear()} Eighty Nine.`,
             },
             prism: {
-                theme: prismThemes.vsDark,
+                theme: prismThemes.github,
                 darkTheme: prismThemes.dracula,
                 additionalLanguages: ['php','json','bash'],
             },
