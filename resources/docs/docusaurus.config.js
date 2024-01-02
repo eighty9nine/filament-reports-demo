@@ -10,7 +10,11 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
     title: 'Filament Reports',
     tagline: 'Elegant reports for your filament application',
-    favicon: 'img/favicon.ico',
+    favicon: 'img/favicon.png',
+
+    markdown: {
+        mermaid: true
+    },
 
     // Set the production url of your site here
     url: 'http://fr.local',
@@ -25,6 +29,8 @@ const config = {
 
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
+
+    themes: ['@docusaurus/theme-mermaid'],
 
     // Even if you don't use internationalization, you can use this field to set
     // useful metadata like html lang. For example, if your site is Chinese, you
@@ -71,6 +77,11 @@ const config = {
                     src: 'img/docusaurus.png'
                 },
                 items: [
+                    {
+                        href: 'https://filament-reports.eighty9.dev/demo',
+                        label: 'Demo',
+                        position: 'right',
+                    },
                     {
                         href: 'https://github.com/eighty9nine/filament-reports',
                         label: 'GitHub',
@@ -126,7 +137,7 @@ const config = {
             prism: {
                 theme: prismThemes.github,
                 darkTheme: prismThemes.dracula,
-                additionalLanguages: ['php','json','bash'],
+                additionalLanguages: ['php', 'json', 'bash'],
             },
         }),
 };

@@ -26,20 +26,17 @@ class MyFirstReport extends Report
             ->schema([
                 Header\Layout\HeaderRow::make()
                     ->schema([
+                        Text::make("Item 1"),
+                        Text::make("Item 2"),
+                        Text::make("Item 3"),
                         Header\Layout\HeaderColumn::make()
                             ->schema([
-                                Image::make($imagePath)
-                                    ->width9Xl(),
-                            ])->alignLeft(),
-                        Header\Layout\HeaderColumn::make()
-                            ->schema([
-                                Text::make("My first report")
-                                    ->title()
-                                    ->primary(),
-                                Text::make("This report is from the docs, and shows a quick start report")
-                                    ->subtitle()
-                            ])->alignRight()
-                    ]),
+                                Text::make("Some title"),
+                                Text::make("Some subtitle"),
+                                Text::make("Some subtitle"),
+                            ])->alignRight(),
+                    ])
+                ->alignBottom(),
             ]);
     }
 
@@ -130,8 +127,7 @@ class MyFirstReport extends Report
             ]);
     }
 
-    public
-    function filterForm(Form $form): Form
+    public function filterForm(Form $form): Form
     {
         return $form
             ->schema([
